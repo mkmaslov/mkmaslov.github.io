@@ -1,0 +1,123 @@
+/* ==========================================================================
+   MASTHEAD
+   ========================================================================== */
+
+.masthead {
+  position: fixed;
+  background: var(--global-bg-color);
+  height: fit-content;
+  top: 0;
+  width: 100%;
+
+  -webkit-animation: intro 0.1s both;
+          animation: intro 0.1s both;
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
+  z-index: 20;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    background: var(--global-border-color);
+    width: 100%;
+  }
+
+  &__inner-wrap {
+    @include container;
+    @include clearfix;
+    padding: 0.5em 1em;
+    font-family: $sans-serif-narrow;
+
+    @include breakpoint($x-large) {
+      max-width: $x-large;
+    }
+
+    nav {
+      z-index: 10;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.masthead__menu {
+
+  ul {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    list-style-type: none;
+  }
+}
+
+.masthead__menu-item {
+  float: left;
+  background-color: var(--global-bg-color);
+  display: block;
+  list-style-type: none;
+  white-space: nowrap;
+
+  &--lg {
+    padding-right: 2em;
+    font-weight: 700;
+  }
+}
+
+.masthead__menu-item--lg { float: left; }
+
+.masthead__menu-item.selected a {
+  color: var(--global-masthead-link-color-selected);
+  font-weight: 700;
+  border-bottom: 4px solid var(--global-masthead-link-color-selected);
+  pointer-events: none; /* Move this here */
+  cursor: default; /* Move this here too */
+}
+
+.masthead__menu-item.selected a:hover {
+  color: var(--global-masthead-link-color-hover);
+  /*border-bottom: 0px solid var(--global-masthead-link-color-hover);*/
+  /* No need to repeat pointer-events and cursor here */
+}
+
+/* Custom navbar */
+.masthead__menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.masthead__brand {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.greedy-nav {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.greedy-nav .visible-links {
+  display: table;
+  margin-left: auto;
+}
+
+.greedy-nav .visible-links > li {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.greedy-nav .hidden-links .masthead__menu-item.selected a {
+  /* color: var(--global-masthead-link-color-selected);*/
+  border-bottom: none;
+  /* pointer-events: auto; */
+  /* cursor: pointer; */ 
+}
+
+.masthead__brand a:hover {
+  color: var(--global-masthead-link-color-hover);
+}
