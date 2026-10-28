@@ -127,7 +127,7 @@
     </span>
   </li>
   <li>
-    Scientific visit to Humbolt University
+    Scientific visit to Humboldt University
     (group of <a href="https://www.physik.hu-berlin.de/en/gop-en/main_en">A. Rauschenbeutel</a>)<br>
     <span class="conf">
         <span class="conf__item">
@@ -563,48 +563,6 @@
         <span class="conf__item">
             <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i>
             Munich, Germany
-        </span>
-    </span>
-  </li>
-  <li>
-    <a href="https://ucan.physics.utoronto.ca/conferences/common-trends-quantum-matter/">
-      Hector Workshop on Common Trends in Quantum Matter
-    </a><br>
-    <span class="conf">
-        <span class="conf__item">
-            <i class="fas fa-fw fa-image" aria-hidden="true"></i>
-            Poster (cancelled, COVID)
-        </span>
-        <span class="conf__sep" aria-hidden="true"></span>
-        <span class="conf__item">
-            <i class="fas fa-fw fa-calendar-days" aria-hidden="true"></i>
-            May 17-20, 2020
-        </span>
-        <span class="conf__sep" aria-hidden="true"></span>
-        <span class="conf__item">
-            <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i>
-            Berlin, Germany
-        </span>
-    </span>
-  </li>
-  <li>
-    <a href="https://hannover20.dpg-tagungen.de/">
-      DPG Spring Meeting of the Atomic, Molecular, Plasma Physics and Quantum Optics Section (SAMOP)
-    </a><br>
-    <span class="conf">
-        <span class="conf__item">
-            <i class="fas fa-fw fa-microphone-lines" aria-hidden="true"></i>
-            Talk (cancelled, COVID)
-        </span>
-        <span class="conf__sep" aria-hidden="true"></span>
-        <span class="conf__item">
-            <i class="fas fa-fw fa-calendar-days" aria-hidden="true"></i>
-            March 8-13, 2020
-        </span>
-        <span class="conf__sep" aria-hidden="true"></span>
-        <span class="conf__item">
-            <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i>
-            Hannover, Germany
         </span>
     </span>
   </li>

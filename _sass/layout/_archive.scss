@@ -14,6 +14,14 @@
     @include prefix(0.5 of 12);
   }
 
+  .cv-entry-header {
+    margin-bottom: 0.25em;
+
+    & + ul {
+      margin-top: 0;
+    }
+  }
+
   a {
     text-decoration: underline;
 
